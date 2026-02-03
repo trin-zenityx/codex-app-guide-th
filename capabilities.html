@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ความสามารถของ Codex App</title>
+  <meta name="description" content="รวมความสามารถของ Codex App พร้อมตัวอย่าง" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-orb orb-a" aria-hidden="true"></div>
+  <div class="bg-orb orb-b" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <nav class="top-nav">
+    <div class="brand">Codex App Guide</div>
+    <div class="nav-links">
+      <a href="index.html">หน้าแรก</a>
+      <a href="learning-path.html">แผนการเรียนรู้</a>
+      <a href="getting-started.html">เริ่มต้น</a>
+      <a href="capabilities.html">ความสามารถ</a>
+      <a href="glossary.html">เมนูอธิบาย</a>
+      <a href="cheat-sheet.html">Cheat Sheet</a>
+      <a href="glossary.html#references">อ้างอิง</a>
+    </div>
+  </nav>
+
+  <header class="page-hero" data-reveal>
+    <div>
+      <p class="eyebrow">Capabilities</p>
+      <h1>ความสามารถของ Codex App</h1>
+      <p>ดูเป็นหมวดหมู่ พร้อมตัวอย่างใช้งานจริง เพื่อเลือกใช้ได้เร็ว</p>
+    </div>
+    <div class="page-hero-card">
+      <h2>วิธีอ่านหน้านี้</h2>
+      <p>ไล่ตามหมวดที่เกี่ยวข้องกับงานของคุณ ไม่จำเป็นต้องอ่านทั้งหมดในครั้งเดียว</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" data-reveal>
+      <div class="section-title">
+        <h2>หมวด: การทำงานแบบหลายงาน (Multi-thread)</h2>
+        <p>เหมาะกับทีมที่ต้องทำหลายงานพร้อมกัน หรือคนที่อยากแยกงานให้ชัด</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-block">
+          <h3>หลายเธรดหลายงาน</h3>
+          <p>เปิดหลายเธรดได้พร้อมกัน และแต่ละเธรดมีบริบทของตัวเอง</p>
+          <div class="example">
+            <p class="example-title">ตัวอย่าง</p>
+            <pre><code>งาน A: รีแฟกเตอร์ auth
+งาน B: สรุปเอกสาร API
+รันพร้อมกันได้คนละเธรด</code></pre>
+          </div>
+        </div>
+        <div class="feature-block accent">
+          <h3>Worktree</h3>
+          <p>แยกโฟลเดอร์ทำงานเพื่อทดลองไอเดียใหม่ ลดความเสี่ยงกับโค้ดหลัก</p>
+          <div class="example">
+            <p class="example-title">ตัวอย่าง</p>
+            <pre><code>สร้าง worktree สำหรับลอง UI ใหม่
+ถ้าไม่เวิร์กก็ลบทิ้ง</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section flow" data-reveal>
+      <div class="section-title">
+        <h2>หมวด: โหมดการทำงาน</h2>
+        <p>เลือกโหมดให้เหมาะกับประเภทงานและความเสี่ยง</p>
+      </div>
+      <div class="split">
+        <div class="split-card">
+          <h3>Local</h3>
+          <p>งานเล็ก แก้เฉพาะจุด ใช้โฟลเดอร์หลักทันที</p>
+        </div>
+        <div class="split-card">
+          <h3>Worktree</h3>
+          <p>ทดลองไอเดียใหม่ หรือแก้ระบบใหญ่โดยไม่ชนกับงานหลัก</p>
+        </div>
+        <div class="split-card">
+          <h3>Cloud</h3>
+          <p>งานใหญ่หรือใช้ทรัพยากรสูง รันบนสภาพแวดล้อมที่จัดไว้</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" data-reveal>
+      <div class="section-title">
+        <h2>หมวด: Git และการส่งงาน</h2>
+        <p>ฟังก์ชันที่ช่วยให้การตรวจงานและส่งงานปลอดภัยขึ้น</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-block">
+          <h3>Diff + Review</h3>
+          <p>ดูการเปลี่ยนแปลง พร้อมคอมเมนต์แบบ inline</p>
+        </div>
+        <div class="feature-block">
+          <h3>Stage / Unstage</h3>
+          <p>เลือกเฉพาะส่วนที่ต้องการส่ง</p>
+        </div>
+        <div class="feature-block">
+          <h3>Commit / PR</h3>
+          <p>เตรียม commit และสรุปสำหรับ PR ได้ในตัว</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" data-reveal>
+      <div class="section-title">
+        <h2>หมวด: เครื่องมือเสริมและอินพุต</h2>
+        <p>เพิ่มบริบทให้ Codex เข้าใจงานเร็วขึ้น</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-block">
+          <h3>Terminal ในเธรด</h3>
+          <p>รันคำสั่ง ทดสอบ และตรวจผลได้ทันที</p>
+        </div>
+        <div class="feature-block">
+          <h3>Web Search</h3>
+          <p>ค้นข้อมูลจากเว็บและสรุปให้ทีม</p>
+        </div>
+        <div class="feature-block">
+          <h3>Image Input</h3>
+          <p>แนบภาพ UI หรือกราฟเพื่อให้เข้าใจบริบท</p>
+        </div>
+        <div class="feature-block">
+          <h3>Voice Dictation</h3>
+          <p>พูดเพื่อพิมพ์คำสั่ง แล้วค่อยแก้ไขก่อนส่ง</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section callout" data-reveal>
+      <div class="section-title">
+        <h2>ต่อไปอ่านอะไรดี?</h2>
+        <p>ถ้าอยากเข้าใจศัพท์ทั้งหมด ให้ไปหน้าเมนูอธิบายฟังก์ชัน</p>
+      </div>
+      <div class="hero-actions">
+        <a class="btn primary" href="glossary.html">ไปที่เมนูอธิบาย</a>
+        <a class="btn ghost" href="cheat-sheet.html">เปิด Cheat Sheet</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>กลับหน้าแรกเพื่อเลือกบทอื่นได้เสมอ</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

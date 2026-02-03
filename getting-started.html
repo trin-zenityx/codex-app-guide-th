@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>เริ่มต้นใช้งาน Codex App</title>
+  <meta name="description" content="คู่มือเริ่มต้นใช้งาน Codex App สำหรับมือใหม่" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-orb orb-a" aria-hidden="true"></div>
+  <div class="bg-orb orb-b" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <nav class="top-nav">
+    <div class="brand">Codex App Guide</div>
+    <div class="nav-links">
+      <a href="index.html">หน้าแรก</a>
+      <a href="learning-path.html">แผนการเรียนรู้</a>
+      <a href="getting-started.html">เริ่มต้น</a>
+      <a href="capabilities.html">ความสามารถ</a>
+      <a href="glossary.html">เมนูอธิบาย</a>
+      <a href="cheat-sheet.html">Cheat Sheet</a>
+      <a href="glossary.html#references">อ้างอิง</a>
+    </div>
+  </nav>
+
+  <header class="page-hero" data-reveal>
+    <div>
+      <p class="eyebrow">เริ่มต้นแบบเร็ว</p>
+      <h1>เริ่มต้นใช้งาน Codex App</h1>
+      <p>เหมาะสำหรับมือใหม่ที่ต้องการเริ่มต้นให้ถูกทาง ตั้งแต่ติดตั้งจนส่งคำสั่งแรก</p>
+    </div>
+    <div class="page-hero-card">
+      <h2>เป้าหมายของหน้านี้</h2>
+      <p>ทำให้คุณเริ่มใช้งานได้ภายใน 10 นาที พร้อมเข้าใจโหมดหลักที่ต้องรู้</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" data-reveal>
+      <div class="section-title">
+        <h2>ขั้นตอน 1-2-3-4 แบบสั้นๆ</h2>
+        <p>อ่านให้จบครั้งเดียวแล้วเริ่มได้ทันที</p>
+      </div>
+      <div class="steps">
+        <div class="step-card">
+          <p class="step-no">1</p>
+          <h3>ติดตั้งและเข้าสู่ระบบ</h3>
+          <p>ติดตั้งบน macOS แล้วเข้าสู่ระบบด้วยบัญชี ChatGPT หรือ API key</p>
+        </div>
+        <div class="step-card">
+          <p class="step-no">2</p>
+          <h3>เลือกโปรเจกต์</h3>
+          <p>เลือกโฟลเดอร์โปรเจกต์ที่ Codex จะเข้าถึงไฟล์ได้</p>
+        </div>
+        <div class="step-card">
+          <p class="step-no">3</p>
+          <h3>เลือกโหมดการทำงาน</h3>
+          <p>Local สำหรับงานเล็ก, Worktree สำหรับทดลอง, Cloud สำหรับงานหนัก</p>
+        </div>
+        <div class="step-card">
+          <p class="step-no">4</p>
+          <h3>ส่งคำสั่งแรก</h3>
+          <p>บอกเป้าหมาย + บริบท + รูปแบบผลลัพธ์ให้ชัด</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" data-reveal>
+      <div class="section-title">
+        <h2>Checklist ก่อนเริ่ม</h2>
+        <p>เช็กให้ครบจะลดปัญหาเวลาทำงานจริง</p>
+      </div>
+      <div class="split">
+        <div class="split-card">
+          <h3>ต้องมี</h3>
+          <ul class="checklist">
+            <li>เข้าถึงโฟลเดอร์โปรเจกต์ได้</li>
+            <li>รู้ว่าอยากให้ Codex ทำอะไร</li>
+            <li>มีไฟล์/ข้อมูลประกอบที่เกี่ยวข้อง</li>
+          </ul>
+        </div>
+        <div class="split-card soft">
+          <h3>ควรเตรียม</h3>
+          <ul class="checklist">
+            <li>ข้อจำกัด เช่น ห้ามเปลี่ยน API</li>
+            <li>รูปแบบผลลัพธ์ที่ต้องการ</li>
+            <li>เวลาและงบประมาณงาน (ถ้ามี)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section callout" data-reveal>
+      <div class="section-title">
+        <h2>สูตรสั่งงานแบบง่ายที่สุด</h2>
+        <p>ใช้ประโยคเดียวแต่ครอบคลุม: เป้าหมาย + บริบท + ข้อจำกัด + ผลลัพธ์</p>
+      </div>
+      <div class="example">
+        <p class="example-title">ตัวอย่าง</p>
+        <pre><code>เป้าหมาย: แก้บั๊ก login
+บริบท: ไฟล์ src/auth.ts
+ข้อจำกัด: ห้ามเปลี่ยน API
+ผลลัพธ์: สรุปเป็น bullet list พร้อมไฟล์ที่เปลี่ยน</code></pre>
+      </div>
+    </section>
+
+    <section class="section" data-reveal>
+      <div class="section-title">
+        <h2>ข้อผิดพลาดที่มือใหม่พบบ่อย</h2>
+        <p>เลี่ยงสิ่งเหล่านี้จะทำให้ผลลัพธ์ตรงใจมากขึ้น</p>
+      </div>
+      <div class="tips">
+        <div class="tip">สั่งงานกว้างเกินไปโดยไม่มีบริบท</div>
+        <div class="tip">ไม่ระบุไฟล์/โฟลเดอร์ที่เกี่ยวข้อง</div>
+        <div class="tip">ไม่กำหนดข้อจำกัด เช่น ห้ามเปลี่ยน API</div>
+        <div class="tip">ไม่ตรวจ diff ก่อน commit</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>กลับหน้าแรกเพื่อเลือกบทอื่นๆ ได้ตลอด</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

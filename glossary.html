@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>เมนูอธิบายฟังก์ชัน Codex App</title>
+  <meta name="description" content="อธิบายฟังก์ชันและศัพท์สำคัญของ Codex App แบบเข้าใจง่าย" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-orb orb-a" aria-hidden="true"></div>
+  <div class="bg-orb orb-b" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <nav class="top-nav">
+    <div class="brand">Codex App Guide</div>
+    <div class="nav-links">
+      <a href="index.html">หน้าแรก</a>
+      <a href="learning-path.html">แผนการเรียนรู้</a>
+      <a href="getting-started.html">เริ่มต้น</a>
+      <a href="capabilities.html">ความสามารถ</a>
+      <a href="glossary.html">เมนูอธิบาย</a>
+      <a href="cheat-sheet.html">Cheat Sheet</a>
+      <a href="#references">อ้างอิง</a>
+    </div>
+  </nav>
+
+  <header class="page-hero" data-reveal>
+    <div>
+      <p class="eyebrow">Glossary</p>
+      <h1>เมนูอธิบายฟังก์ชัน</h1>
+      <p>อ่านแบบแยกหมวด เปิด/ปิดได้เพื่อไม่ให้ตาลาย เหมาะกับมือใหม่ที่อยากเข้าใจศัพท์สำคัญ</p>
+    </div>
+    <div class="page-hero-card">
+      <h2>วิธีใช้หน้านี้</h2>
+      <p>กดเปิดเฉพาะหมวดที่ต้องใช้ แล้วค่อยกลับมาอ่านหมวดอื่นเมื่อพร้อม</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" data-reveal>
+      <details class="glossary-accordion" open>
+        <summary>โครงสร้างการทำงาน</summary>
+        <div class="accordion-body">
+          <div class="glossary-item">
+            <h4>Thread</h4>
+            <p>ห้องสนทนาหนึ่งห้องสำหรับงานหนึ่งงาน เก็บบริบทและผลลัพธ์ของงานนั้นๆ</p>
+          </div>
+          <div class="glossary-item">
+            <h4>Agent</h4>
+            <p>ผู้ช่วยอัตโนมัติที่ทำงานตามคำสั่ง เช่น เขียนโค้ด รีแฟกเตอร์ หรือสรุปรายงาน</p>
+          </div>
+          <div class="glossary-item">
+            <h4>Workspace / Project</h4>
+            <p>โฟลเดอร์หลักของโปรเจกต์ที่ Codex เข้าถึงได้</p>
+          </div>
+          <div class="glossary-item">
+            <h4>Context / Auto Context</h4>
+            <p>ข้อมูลประกอบที่ให้ Codex เข้าใจงาน เช่น ไฟล์ โฟลเดอร์ หรือข้อความ</p>
+          </div>
+        </div>
+      </details>
+
+      <details class="glossary-accordion">
+        <summary>โหมดการทำงาน</summary>
+        <div class="accordion-body">
+          <div class="glossary-item">
+            <h4>Local</h4>
+            <p>รันงานในโฟลเดอร์ปัจจุบัน เหมาะกับงานแก้ไขเล็กๆ</p>
+          </div>
+          <div class="glossary-item">
+            <h4>Worktree</h4>
+            <p>โฟลเดอร์ทำงานแยกจากงานหลัก ช่วยให้ทดลองไอเดียใหม่ได้ปลอดภัย</p>
+          </div>
+          <div class="glossary-item">
+            <h4>Cloud</h4>
+            <p>รันงานบนสภาพแวดล้อมที่ตั้งค่าไว้ เหมาะกับงานใหญ่</p>
+          </div>
+          <div class="glossary-item">
+            <h4>Sandbox / Permissions</h4>
+            <p>ขอบเขตการเข้าถึงไฟล์และคำสั่งเพื่อความปลอดภัย</p>
+          </div>
+        </div>
+      </details>
+
+      <details class="glossary-accordion">
+        <summary>การทำงานกับโค้ดและ Git</summary>
+        <div class="accordion-body">
+          <div class="glossary-item">
+            <h4>Diff / Review</h4>
+            <p>ดูการเปลี่ยนแปลงโค้ดและคอมเมนต์ได้แบบ inline</p>
+          </div>
+          <div class="glossary-item">
+            <h4>Stage / Unstage</h4>
+            <p>เลือกเฉพาะส่วนที่ต้องการส่งขึ้น Git</p>
+          </div>
+          <div class="glossary-item">
+            <h4>Commit / PR</h4>
+            <p>สร้าง commit และเตรียม Pull Request ได้ในแอป</p>
+          </div>
+          <div class="glossary-item">
+            <h4>Worktree Branch</h4>
+            <p>สร้างสาขาแยกเพื่อทำงานแบบไม่ชนกับงานหลัก</p>
+          </div>
+        </div>
+      </details>
+
+      <details class="glossary-accordion">
+        <summary>การขยายความสามารถ</summary>
+        <div class="accordion-body">
+          <div class="glossary-item">
+            <h4>Skills</h4>
+            <p>ชุดคำสั่งหรือแนวทางเฉพาะที่เรียกใช้ซ้ำได้</p>
+          </div>
+          <div class="glossary-item">
+            <h4>Automations</h4>
+            <p>งานอัตโนมัติที่ตั้งเวลาให้ทำซ้ำ เช่น รายงานรายวัน</p>
+          </div>
+          <div class="glossary-item">
+            <h4>Model Selection</h4>
+            <p>เลือกโมเดลให้เหมาะกับงาน เช่น งานสรุปเร็วหรืองานละเอียด</p>
+          </div>
+          <div class="glossary-item">
+            <h4>System / User Instructions</h4>
+            <p>กติกาการตอบและสไตล์งาน เช่น ภาษาและรูปแบบผลลัพธ์</p>
+          </div>
+        </div>
+      </details>
+
+      <details class="glossary-accordion">
+        <summary>อินพุตและเครื่องมือเสริม</summary>
+        <div class="accordion-body">
+          <div class="glossary-item">
+            <h4>Terminal ในเธรด</h4>
+            <p>รันคำสั่ง ติดตั้งแพ็กเกจ หรือทดสอบได้ในเธรดเดียวกัน</p>
+          </div>
+          <div class="glossary-item">
+            <h4>Web Search</h4>
+            <p>ค้นข้อมูลจากเว็บเพื่ออ้างอิงเอกสารล่าสุด</p>
+          </div>
+          <div class="glossary-item">
+            <h4>Image Input</h4>
+            <p>แนบรูปเพื่อให้ Codex เข้าใจบริบท เช่น UI หรือกราฟ</p>
+          </div>
+          <div class="glossary-item">
+            <h4>Voice Dictation</h4>
+            <p>สั่งงานด้วยเสียง แล้วแก้ไขข้อความก่อนส่งได้</p>
+          </div>
+        </div>
+      </details>
+
+      <details class="glossary-accordion">
+        <summary>การทำงานร่วมทีมและการติดตามผล</summary>
+        <div class="accordion-body">
+          <div class="glossary-item">
+            <h4>IDE Extension Sync</h4>
+            <p>ซิงก์กับ IDE เพื่อให้บริบทตรงกัน</p>
+          </div>
+          <div class="glossary-item">
+            <h4>Notifications</h4>
+            <p>แจ้งเตือนเมื่อเสร็จงาน</p>
+          </div>
+          <div class="glossary-item">
+            <h4>Prevent Sleep</h4>
+            <p>กันเครื่องหลับระหว่างงานยาว</p>
+          </div>
+          <div class="glossary-item">
+            <h4>Activity Log</h4>
+            <p>ย้อนดูสิ่งที่ Codex ทำไปแล้ว</p>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <section id="references" class="section" data-reveal>
+      <div class="section-title">
+        <h2>อ้างอิงเอกสารทางการ</h2>
+        <p>อ่านรายละเอียดเพิ่มเติมจากแหล่งข้อมูลทางการ</p>
+      </div>
+      <div class="tips">
+        <div class="tip"><a href="https://developers.openai.com/codex/app">Codex App Overview</a></div>
+        <div class="tip"><a href="https://developers.openai.com/codex/app/features">Codex App Features</a></div>
+        <div class="tip"><a href="https://openai.com/index/introducing-the-codex-app/">OpenAI: Introducing the Codex App</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>ถ้าต้องการตัวอย่างคำสั่งเร็ว ไปที่ Cheat Sheet ได้เลย</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

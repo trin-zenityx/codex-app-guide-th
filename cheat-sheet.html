@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cheat Sheet Codex App</title>
+  <meta name="description" content="รวมคำสั่งลัดสำหรับใช้งาน Codex App" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-orb orb-a" aria-hidden="true"></div>
+  <div class="bg-orb orb-b" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <nav class="top-nav">
+    <div class="brand">Codex App Guide</div>
+    <div class="nav-links">
+      <a href="index.html">หน้าแรก</a>
+      <a href="learning-path.html">แผนการเรียนรู้</a>
+      <a href="getting-started.html">เริ่มต้น</a>
+      <a href="capabilities.html">ความสามารถ</a>
+      <a href="glossary.html">เมนูอธิบาย</a>
+      <a href="cheat-sheet.html">Cheat Sheet</a>
+      <a href="glossary.html#references">อ้างอิง</a>
+    </div>
+  </nav>
+
+  <header class="page-hero" data-reveal>
+    <div>
+      <p class="eyebrow">Quick Commands</p>
+      <h1>Cheat Sheet สั่งงานเร็ว</h1>
+      <p>รวมคำสั่งสำเร็จรูปที่คัดลอกไปใช้ได้ทันที แยกตามงานเพื่อหาง่าย</p>
+    </div>
+    <div class="page-hero-card">
+      <h2>ใช้ยังไง</h2>
+      <p>คัดลอกประโยคที่ใกล้เคียงงานของคุณ แล้วเติมรายละเอียดเฉพาะโปรเจกต์</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" data-reveal>
+      <div class="section-title">
+        <h2>คำสั่งพื้นฐาน</h2>
+        <p>เริ่มงานใหม่หรือสั่งงานทั่วไป</p>
+      </div>
+      <div class="cheat-grid">
+        <div class="cheat-card">
+          <h3>เริ่มงานใหม่</h3>
+          <ul class="cheat-list">
+            <li>“สร้างเธรดใหม่สำหรับงาน X และตั้งชื่อให้จำง่าย”</li>
+            <li>“เปิดงานใหม่เป็น Worktree สำหรับฟีเจอร์ Y”</li>
+            <li>“สรุปเป้าหมายงานนี้ให้ชัดก่อนเริ่ม”</li>
+          </ul>
+        </div>
+        <div class="cheat-card">
+          <h3>สรุปงาน</h3>
+          <ul class="cheat-list">
+            <li>“สรุปผลลัพธ์เป็น bullet list พร้อมไฟล์ที่เปลี่ยน”</li>
+            <li>“ทำสรุปสำหรับทีมแบบ 5 ข้อ”</li>
+            <li>“อธิบายให้มือใหม่เข้าใจใน 3 ย่อหน้า”</li>
+          </ul>
+        </div>
+        <div class="cheat-card highlight">
+          <h3>Prompt สูตรสำเร็จ</h3>
+          <p class="cheat-formula">“เป้าหมาย + บริบท + ข้อจำกัด + รูปแบบผลลัพธ์”</p>
+          <div class="example">
+            <p class="example-title">ตัวอย่าง</p>
+            <pre><code>เป้าหมาย: แก้บั๊ก login
+บริบท: ไฟล์ src/auth.ts
+ข้อจำกัด: ห้ามเปลี่ยน API
+รูปแบบผลลัพธ์: สรุปเป็น bullet list</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section flow" data-reveal>
+      <div class="section-title">
+        <h2>คำสั่งสำหรับงานโค้ด</h2>
+        <p>ใช้กับการแก้โค้ด รีแฟกเตอร์ และทดสอบ</p>
+      </div>
+      <div class="cheat-grid">
+        <div class="cheat-card">
+          <h3>แก้บั๊ก</h3>
+          <ul class="cheat-list">
+            <li>“หาสาเหตุบั๊กนี้และเสนอวิธีแก้ 2 ทาง”</li>
+            <li>“แก้ให้หายและสรุปสิ่งที่เปลี่ยน”</li>
+            <li>“เพิ่มเทสต์กันบั๊กนี้ไม่ให้กลับมาอีก”</li>
+          </ul>
+        </div>
+        <div class="cheat-card">
+          <h3>รีแฟกเตอร์</h3>
+          <ul class="cheat-list">
+            <li>“รีแฟกเตอร์ให้อ่านง่ายขึ้น โดยไม่เปลี่ยน behavior”</li>
+            <li>“แยกฟังก์ชันใหญ่ให้เป็นฟังก์ชันย่อย”</li>
+            <li>“เพิ่มคอมเมนต์เฉพาะส่วนที่ซับซ้อน”</li>
+          </ul>
+        </div>
+        <div class="cheat-card">
+          <h3>ทดสอบ</h3>
+          <ul class="cheat-list">
+            <li>“รันเทสต์ทั้งหมด แล้วสรุปผลให้ที”</li>
+            <li>“แนะนำ edge case ที่ยังไม่ถูกเทสต์”</li>
+            <li>“เพิ่มเทสต์ให้ครอบคลุมเส้นทางสำคัญ”</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" data-reveal>
+      <div class="section-title">
+        <h2>คำสั่งสำหรับงานทีม</h2>
+        <p>เหมาะกับการรีวิว ส่งงาน หรือสรุปให้ทีม</p>
+      </div>
+      <div class="cheat-grid">
+        <div class="cheat-card">
+          <h3>รีวิวโค้ด</h3>
+          <ul class="cheat-list">
+            <li>“ช่วยดู diff และชี้จุดเสี่ยงที่อาจพังได้”</li>
+            <li>“ให้ feedback แบบมืออาชีพและเสนอทางเลือก”</li>
+            <li>“สรุปประเด็นหลักให้ทีมอ่านใน 1 นาที”</li>
+          </ul>
+        </div>
+        <div class="cheat-card">
+          <h3>เตรียม PR</h3>
+          <ul class="cheat-list">
+            <li>“สร้าง commit message ให้สั้น กระชับ”</li>
+            <li>“สรุป PR ในรูปแบบ template ที่ทีมใช้”</li>
+            <li>“แนะนำ checklist ก่อน merge”</li>
+          </ul>
+        </div>
+        <div class="cheat-card">
+          <h3>เอกสาร/สรุป</h3>
+          <ul class="cheat-list">
+            <li>“สรุปเอกสารนี้เป็น 5 ประเด็น”</li>
+            <li>“ทำ checklist ให้ทีมทำตามทีละขั้น”</li>
+            <li>“แปลงเป็นคู่มือภาษาไทยพร้อมตัวอย่าง”</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>ถ้าต้องการคำอธิบายเชิงลึกของคำศัพท์ ไปที่เมนูอธิบายฟังก์ชันได้เลย</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
